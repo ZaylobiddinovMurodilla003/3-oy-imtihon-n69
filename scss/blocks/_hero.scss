@@ -23,7 +23,6 @@
     max-width: 610px;
     gap: 40px;
     font-family: "PT Sans", sans-serif;
-    color: $main-color-black;
   }
 
   &__heading {
@@ -33,6 +32,7 @@
     font-size: 52px;
     line-height: 65px;
     font-weight: 600;
+    color: $main-color-black;
   }
 
   &__text {
@@ -57,8 +57,10 @@
     color: $main-color-black;
   }
 
-  &__link {
-    color: $main-color-black;
+  &__button:hover {
+    color: $button-color-dark;
+    border-bottom: 3px solid $main-color-black;
+    transition: all 0.5s ease;
   }
 
   &__list {

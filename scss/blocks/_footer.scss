@@ -1,0 +1,112 @@
+.footer {
+  background: #0b7572;
+  padding: 60px 0 30px;
+  color: $white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 97px;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+  }
+
+  &__item {
+    transition: all 0.5s ease;
+  }
+
+  &__item:hover {
+    transform: scale(1.1);
+  }
+
+  &__link {
+    color: $white;
+    font-family: "Exo 2" sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.16em;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+  }
+  &__link:hover {
+    color: $button-color;
+  }
+
+  &__contact {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    gap: 32px;
+  }
+
+  &__socialIcons {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__socialIcon {
+    transition: all 0.5s ease;
+  }
+
+  &__socialIcon:hover {
+    transform: scale(1.5);
+  }
+
+  &__button {
+    font-family: "Open Sans" sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+    background-color: $button-color-dark;
+    padding: 7px 11px 8px;
+    color: $white;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+  }
+
+  &__button:hover {
+    background-color: $white;
+    color: $button-color-dark;
+    transform: scale(1.1);
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .footer__container {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer__container {
+    flex-flow: column;
+    padding: 14px 45px 28px;
+  }
+
+  .footer__lists {
+    display: flex;
+    gap: 80px;
+  }
+
+  .footer__button {
+    text-align: center;
+  }
+}

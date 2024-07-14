@@ -75,6 +75,12 @@
       border-bottom: 3px solid $button-color;
       text-align: center;
       padding-bottom: 4px;
+      transition: all 0.5s ease;
+    }
+
+    &__price:hover {
+      color: $button-color-dark;
+      border-bottom: 3px solid $main-color-black;
     }
 
     &__img {
