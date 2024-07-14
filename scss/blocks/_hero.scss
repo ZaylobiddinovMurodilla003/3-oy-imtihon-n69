@@ -54,6 +54,11 @@
     background-color: #fff;
     border-bottom: 3px solid $button-color;
     text-align: center;
+    color: $main-color-black;
+  }
+
+  &__link {
+    color: $main-color-black;
   }
 
   &__list {
